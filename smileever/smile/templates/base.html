@@ -1,0 +1,205 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="icon" href="{% static 'images/logo.png' %}" alt="logo">
+    <title> {% block title %}Smile Home{% endblock %}</title>
+    
+</head>
+<body>
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm p-3 mb-5 bg-white rounded">
+        <a class="navbar-brand" href="/home">
+          Smile Ever Dental
+          <img src="{% static 'images/logo.png' %}" alt="logo" height="30" width="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-hover-primary">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarTogglerDemo02" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/gumsurgery">Gum Surgery</a>
+                <a class="dropdown-item" href="/dentalimplant">Dental Implants</a>
+                <a class="dropdown-item" href="/generaldentistry">General Dentistry</a>
+                <a class="dropdown-item" href="/periodontics">Periodontics</a>
+                <a class="dropdown-item" href="/orthodontics">Orthodontics</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br><br>
+      <!-- Top navigation -->
+    
+    </header>
+
+
+{% block content %}
+
+{% endblock %}
+    
+<section class="container">
+  
+    <h1 class="text-center pt-5 display-4">Our Address</h1>
+    <hr class="w-25 mx-auto pb-5">
+    <address class="text-center pb-5">
+      <p>35/10, 1st Floor,  Kaggadasapura Main Road,</p>
+      <p> CV Raman Nagar</p>
+      <p> Landmark: Opposite Karnataka Bank & HP Petrol Bunk</p>
+      <p> Bangalore - 560093</p>
+    </address>
+</section>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-light p-5">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <a class="navbar-brand logo text-dark" href="/home">
+          Smile Ever Dental
+          <img src="{% static 'images/logo.png' %}" alt="logo" height="30" width="30">
+        </a>
+        
+        
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Our Services</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="/gumsurgery">Gum Surgery</a>
+            </li>
+            <li>
+              <a href="/dentalimplant">Dental Implants</a>
+            </li>
+            <li>
+              <a href="/generaldentistry">General Dentistry</a>
+            </li>
+            <li>
+              <a href="/periodontics">Periodontics</a>
+            </li>
+            <li>
+              <a href="/orthodontics">Orthodontics</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              Monday: 9am–7pm
+            </li>
+            <li>
+              Tuesday: 9am–7pm
+            </li>
+            <li>
+              Wednesday: 9am–7pm
+            </li>
+            <li>
+              Thursday: 9am–7pm
+            </li>
+            <li>
+              Friday: 9am–7pm
+            </li>
+            <li>
+              Saturday: 9am–7pm
+            </li>
+            <li>
+              Sunday: 10am–4pm
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Our Location</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15551.593895599419!2d77.679197!3d12.978345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x200ddde1e49e72a7!2sSmile%20Ever%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1602308079597!5m2!1sen!2sin" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        
+        </div>
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  <hr>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright
+      <a href="/home"> smileeverdental.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+   
+    
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+      function submit() { 
+        /*Put all the data posting code here*/ 
+       document.getElementById("my-form").reset(); 
+      }
+    </script>
+</body>
+</html>

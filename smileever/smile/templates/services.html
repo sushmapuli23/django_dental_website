@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Servies - Smile Ever Dental Clinic | Bangalore, India
+{% endblock %}
+{% block content %}
+
+    <header>
+        <div class="wrapper">
+            <img src="{% static 'images/s.jpg' %}" alt="about-img" width="100%" height="600">
+            <div class="text-block">
+                <h1>SERVICES</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="container pt-5">
+        <h3 class="text-uppercase pt-5 pb-2" style="word-spacing: 1rem;letter-spacing:.5rem">we love to see you smile</h3>
+        <p class="pt-5 pb-5">
+            We’re passionate about helping you experience a beautiful and healthy smile.<br>
+            You can expect gentle and compassionate care with precision excellence.
+        </p>
+    </section>
+
+    
+    <div class="container-fluid p-5">
+        <div class="row p-5 ">
+          <div class="col-sm-6 p-5 gum-surgery">
+              <img src="{% static 'images/gum-surgeries.jpg' %}" alt="doctor" height="600" width="350" style="border: 5px solid #fff;">
+          </div>
+          <div class="col-sm-6 pt-5">
+                <h1 class="pt-5 pb-5 display-4">Gum Surgeries</h1>
+                <p>
+                    Gum surgeries are needed for patients who have developed gum disease. Gum disease is one of the most common reasons for tooth loss.
+                </p>
+                <p>
+                    It starts gradually. Some of the early signs are swollen, red, bleeding gums or bad breath which is followed by more severe symptoms like loose, shifted teeth and a dull ache in the gums.
+                </p>
+                <p>
+                    Periodontitis is an advanced form of gingivitis that leads to inflammation and damaged bone and tissue.
+                </p>
+
+                <p>
+                    Periodontitis usually requires a visit to a gum doctor, known as a periodontist, and treatment may involve gum surgery.
+                </p>
+
+                <p>
+                    There are many types of gum surgeries that can help alleviate these symptoms. Besides poor oral care routine, there are certain chronic illnesses and certain medications that can lead to gum problems.
+                </p>
+                
+                
+
+          </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

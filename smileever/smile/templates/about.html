@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+About - Smile Ever Dental Clinic | Bangalore, India
+{% endblock %}
+{% block content %}
+
+    <header>
+        <div class="wrapper">
+            <img src="{% static 'images/about-img.jpg' %}" alt="about-img" width="100%">
+            <div class="text-block">
+                <h3>About Smile Ever Dental Clinic</h3>
+                <p>Creating an Excellent patient experience</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section class="">
+        <h1>Get to Know us</h1>
+        <p>
+            Smile Ever Dental Clinic welcomes you! We use the latest dental technology to offer excellent dental care to provide a pleasant, stress free experience. For your convenience, our clinics offer evenings and Saturday appointments as well as electronic insurance processing for easy and quick payment.
+        </p>
+        <p>
+            Every detail of your appointment is crafted to ensure you feel at home. Enjoy our bright, lively, and comfortable office while we work hard to make your appointment effortless.
+        </p>
+
+    </section> -->
+
+    <section>
+        <div class="container">
+            <h1 class="display-4 p-5">Get to know us</h1>
+            <p class="lead">
+                Smile Ever Dental Clinic welcomes you! We use the latest dental technology to offer excellent dental care to provide a pleasant, stress free experience. For your convenience, our clinics offer evenings and Saturday appointments as well as electronic insurance processing for easy and quick payment.
+            </p>
+            
+            <p class="lead">
+                Every detail of your appointment is crafted to ensure you feel at home. Enjoy our bright, lively, and comfortable office while we work hard to make your appointment effortless.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <!-- <div class="container p-5 bg-light">
+            <h1>Hello</h1>
+            <p>I am Dr. Asha Praveena, Dentist. Owner of Smile Ever Dental Clinic</p>
+            
+        </div> -->
+
+        <div class="container p-5">
+            <div class="row p-5">
+              <div class="col-sm-8 p-5 text-center doc-image">
+                <img src="{% static 'images/doctor.jpg' %}" alt="doctor" class="doctor" height="900" width="550px" style="border: 5px solid #fff;">
+              </div>
+              <div class="col-sm-4 pt-5 doc-detail">
+                <h1 class="pb-5">Meet Dr.Asha Praveena</h1>
+                <p>
+                    Dr.Asha Praveena - Dentist/ Periodontist(gum care specialist) and implantology,Owner at SMILE EVER DENTAL Clinic has been in practice for more than ten years.
+                </p>
+                <p>
+                    She worked as an associate professor in HKDET dental college. She also works as a consultant with many reputed clinics in Bangalore.
+                </p>
+                <p>
+                    She takes time to get to know each patient and places a special emphasis on their experience.
+                </p>
+                <p>
+                    Being a specialized Periodontist Doctors, the doctor offers a number of medical services.
+                </p>
+                <p>
+                    Smile Ever includes flexible partial And Complete Denture, Cosmetic And Aesthetic Dentistry, Fixed Partial Denture Treatment, Maxillo Facial Prosthodontics, Gum Disease Treatment Surgery, Endo Surgery Or Apicoectomy, Pits And Fissures Sealants among others. 
+                </p>
+
+
+              </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+
+
+    
+
+{% endblock%}
